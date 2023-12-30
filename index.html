@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="imagens/icon-local.png">
+    <title>Logo</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <img src="imagens/logo-cabecalho-icone.png" alt="logo icone">
+        <img src="imagens/icons8-magnifying-glass-30.png" alt="Lupa pesquisar">
+    </header>
+
+    <!-- Seção Mapa -->
+    <section class="container__mapa">
+
+        <!-- Barra Superior -->
+        <nav class="mapa__links">
+            <a class="selecionado" href="#">
+                <img src="imagens/icons8-airplane-96.png" alt="Avião">
+                <p class="link-texto">Flight</p>
+            </a>
+            <a href="#">
+                <img src="imagens/icons8-bed-100.png" alt="Cama">
+                <p class="link-texto">Hotel</p>
+            </a>
+            <a href="#">
+                <img src="imagens/icons8-car-90.png" alt="Carro">
+                <p class="link-texto">Rental</p>
+            </a>
+        </nav>
+
+        <!-- Seção Mapa -->
+        <div class="container__mapa__principal">
+
+            <h1 class="mapa__principal-tiutlo">Travel the world with us</h1>
+
+            <div class="container__mapa-imput">
+                <div class="container__mapa-imput-from">
+                    <label class="mapa__principal-label" for="from">From</label>
+
+                    <input class="mapa__principal-input" placeholder="Departing from" type="text" id="from"
+                        name="from" />
+                </div>
+                <div class="container__mapa-imput-to">
+                    <label class="mapa__principal-label" for="to">To</label>
+
+                    <input class="mapa__principal-input" placeholder="Arriving at" type="text" id="to" name="to" />
+                </div>
+            </div>
+            <a class="mapa__principal-link" href="#">Search and Find dates</a>
+        </div>
+
+    </section>
+
+    <!-- Seção Ofertas -->
+
+    <main class="principal">
+
+        <section class="section__ofertas">
+
+            <h2 class="section__ofertas-titulo">Good Offers Right Now</h2>
+            <p class="section__ofertas-promocao">Up to <big class="section__ofertas-promoçao-big">50%</big> discount</p>
+
+            <div class="ofertas__imagems">
+                <aside class="section__ofertas--lugares" id="cinqueterre">Cinque Terre</aside>
+                <aside class="section__ofertas--lugares" id="newyork">New York</aside>
+                <aside class="section__ofertas--lugares" id="sanfran">San Francisco</aside>
+                <aside class="section__ofertas--lugares" id="pisa">Pisa</aside>
+                <aside class="section__ofertas--lugares" id="paris">Paris</aside>
+            </div>
+
+            <div class="section__ofertas-cartao">
+
+                <h2 class="section__ofertas-cartao--titulo">Explore Nature</h2>
+                <p class="section__ofertas-cartao-texto">Travel with us and see nature at its finest.</p>
+
+                <div class="section__cartoes">
+                    <div class="section__ofertas-cartao-div">
+
+                        <img class="section__ofertas-cartao--imagem" src="imagens/ocean.jpg" alt="ocean">
+
+                        <div class="section__ofertas-cartao-div__texto">
+                            <h2 class="section__ofertas-cartao--imagem_titulo">West Coast, Norway</h2>
+                            <p class="section__ofertas-cartao--imagem_preco">One-way from $39</p>
+                            <p class="section__ofertas-cartao--imagem_texto">Praesent tincidunt sed tellus ut rutrum sed
+                                vitae justo.
+                            </p>
+
+                            <h3 class="section__ofertas-cartao--imagem_subtitulo">Buy Tickets</h3>
+                        </div>
+                    </div>
+
+                    <div class="section__ofertas-cartao-div">
+
+                        <img class="section__ofertas-cartao--imagem" src="imagens/mountains.jpg" alt="Montains">
+
+                        <div class="section__ofertas-cartao-div__texto">
+                            <h2 class="section__ofertas-cartao--imagem_titulo">Montains, Austria</h2>
+                            <p class="section__ofertas-cartao--imagem_preco">Roundtrip from $79</p>
+                            <p class="section__ofertas-cartao--imagem_texto">Praesent tincidunt sed tellus ut rutrum sed
+                                vitae justo.
+                            </p>
+
+                            <h3 class="section__ofertas-cartao--imagem_subtitulo">Buy Tickets</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section class="join-us-offers">
+            <h2 class="Join-us-offers-titulo">Get the best offers first!</h2>
+            <p class="Join-us-offers-texto">Join our newsletter.</p>
+
+            <h4 class="join-us-email">E-mail</h3>
+                <input class="join-us-input" placeholder="Your Email address" type="email" id="email" name="email" />
+
+                <a class="join-us-botao" href="#">Subscribe</a>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="contact__section">
+            <h2 class="contact__section-titulo">Contact</h2>
+            <p class="contact__section-descricao">Let us book your next trip!</p>
+
+            <div class="contact__section__listas">
+                <ul class="contact__section__lista-informacoes">
+                    <li class="contact__section__lista-informacoes--item">
+                        <img class="informacoes-item-icone-local" src="imagens/icons8-local-96.png"></i>
+                        <h4 class="informacoes-item-descricao">Chicago, US</h4>
+                    </li>
+                    <li class="contact__section__lista-informacoes--item">
+                        <img class="informacoes-item-icone-telefone" src="imagens/icons8-phone-96.png"></i>
+                        <h4 class="informacoes-item-descricao">Phone: +00 151515</h4>
+                    </li>
+                    <li class="contact__section__lista-informacoes--item">
+                        <img class="informacoes-item-icone-email" src="imagens/icons8-email-24.png"></i>
+                        <h4 class="informacoes-item-descricao">Email: mail@mail.com</h4>
+                    </li>
+                </ul>
+                <ul class="contact__section__lista-input">
+                    <li class="contact__section__lista-input--item">
+                        <input class="input-item" placeholder="Name" type="text" id="name" name="name" />
+                    </li>
+                    <li class="contact__section__lista-input--item">
+                        <input class="input-item" placeholder="Email" type="email" id="email2" name="email2" />
+                    </li>
+                    <li class="contact__section__lista-input--item">
+                        <input class="input-item" placeholder="Message" type="text" id="message" name="message" />
+                    </li>
+                </ul>
+            </div>
+
+            <a class="contact__section-botao" href="#">send message</a>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <h4 class="rodape__titulo">Find Us On</h4>
+
+        <ul class="rodape__icones">
+            <li class="rodape__icones-item"><img src="imagens/icons8-facebook-90.png" alt="Facebook"></li>
+            <li class="rodape__icones-item"><img src="imagens/icons8-instagram-50.png" alt="Instagram"></li>
+            <li class="rodape__icones-item"><img src="imagens/icons8-snapchat.png" alt="Snapchat"></li>
+            <li class="rodape__icones-item"><img src="imagens/icons8-pinterest.png" alt="Pinterest"></li>
+            <li class="rodape__icones-item"><img src="imagens/icons8-twitter-90.png" alt="Twitter"></li>
+            <li class="rodape__icones-item"><img src="imagens/icons8-linkedin-2-90.png" alt="Linkedin"></li>
+        </ul>
+
+        <h5 class="rodape__subititulo">Powered by <i>w3.css</i></h5>
+    </footer>
+</body>
+
+</html>

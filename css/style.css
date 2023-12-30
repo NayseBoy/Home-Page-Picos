@@ -1,0 +1,546 @@
+:root {
+
+    --fonte: "Raleway", sans-serif;
+    --laranja: rgb(255, 51, 0);
+    --cinza: rgb(93, 93, 93);
+    --cinza-fundo: rgb(221, 220, 220);
+    --fonte-preto: black;
+    --fonte-branca: white;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 15px;
+}
+
+.cabecalho__logo img {
+    width: 40px;
+}
+
+.cabecalho__logo h1 {
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--laranja);
+}
+
+
+/* Barra Superior */
+
+.mapa__links {
+    display: flex;
+    align-items: center;
+    height: 39px;
+    background-color: var(--fonte-preto);
+}
+
+.mapa__links a {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    text-decoration: none;
+    height: 100%;
+}
+
+.mapa__links img {
+    width: 20px;
+}
+
+.mapa__links .link-texto {
+    padding-left: 13px;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--fonte-branca);
+}
+
+.selecionado {
+    background-color: var(--laranja);
+    padding-right: 10px;
+}
+
+
+/* Seção Mapa */
+
+.container__mapa__principal {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 0 15px;
+}
+
+.mapa__principal-tiutlo {
+    font-size: 1.5em;
+    margin-bottom: 10px
+}
+
+.container__mapa-imput {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__mapa-imput-from {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__mapa-imput-to {
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa__principal-label {
+    font-size: 1em;
+    margin: 4px 0;
+}
+
+.mapa__principal-input {
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid var(--cinza-fundo);
+}
+
+.mapa__principal-link {
+    background-color: var(--cinza);
+    width: 185px;
+    margin: 12px 0 30px 0;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--fonte-branca);
+    font-size: .95em;
+}
+
+
+/* Seção Ofertas */
+
+.principal {
+    background-color: var(--cinza-fundo);
+    padding: 0 15px;
+}
+
+.section__ofertas-titulo {
+    padding-top: 70px;
+    font-size: 1.5em;
+}
+
+.section__ofertas-promocao {
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.section__ofertas-promoçao-big {
+    font-weight: 700;
+}
+
+.section__ofertas--lugares {
+    margin-top: 15px;
+}
+
+.section__ofertas--lugares {
+    color: var(--fonte-branca);
+    padding: 190px 0 15px 13px;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+#cinqueterre {
+    background-image: url("../imagens/cinqueterre.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#newyork {
+    background-image: url("../imagens/newyork.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#sanfran {
+    background-image: url("../imagens/sanfran.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#pisa {
+    background-image: url("../imagens/pisa.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#paris {
+    background-image: url("../imagens/paris.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.section__ofertas-cartao {
+    margin-top: 30px;
+}
+
+.section__ofertas-cartao--titulo {
+    font-size: 1.5em;
+}
+
+.section__ofertas-cartao-texto {
+    margin: 20px 0 20px 0;
+    font-weight: 500;
+    font-size: .95em;
+}
+
+.section__ofertas-cartao--imagem {
+    width: 100%;
+}
+
+.section__cartoes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.section__ofertas-cartao-div {
+    background-color: var(--fonte-branca);
+    padding-bottom: 20px;
+}
+
+.section__ofertas-cartao-div__texto {
+    padding: 11px 0 0 20px;
+}
+
+.section__ofertas-cartao--imagem_titulo {
+    font-size: 1.5em;
+}
+
+.section__ofertas-cartao--imagem_preco {
+    margin-top: 25px;
+    font-size: .9em;
+    color: var(--cinza);
+}
+
+.section__ofertas-cartao--imagem_texto {
+    margin-top: 25px;
+    font-size: 15.27px;
+    line-height: 20px;
+}
+
+.section__ofertas-cartao--imagem_subtitulo {
+    margin: 25px 0 0 15px;
+}
+
+/* Join Us Section */
+
+.join-us-offers {
+    background-color: var(--cinza);
+    color: var(--fonte-branca);
+    margin-top: 28px;
+    padding: 30px 10px 20px 15px;
+}
+
+.Join-us-offers-titulo {
+    font-size: 1.9em;
+    line-height: 47px;
+}
+
+.Join-us-offers-texto {
+    margin-top: 20px;
+    font-size: .9em;
+}
+
+.join-us-email {
+    margin: 24px 0 2px 0;
+}
+
+.join-us-input {
+
+    width: 94%;
+    height: 35px;
+}
+
+.join-us-input::placeholder {
+    padding-left: 7px;
+    font-size: 1.1em;
+    color: var(--cinza-fundo);
+    font-weight: 400;
+}
+
+.join-us-botao {
+    background-color: rgb(255, 131, 100);
+    width: 100px;
+    margin-top: 15px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cinza-fundo);
+    font-size: .95em;
+}
+
+/* Contact Section */
+
+.contact__section-titulo {
+    margin-top: 35px;
+    font-size: 1.9em;
+    font-weight: 400;
+}
+
+.contact__section-descricao {
+    margin-top: 30px;
+    font-size: .942em;
+}
+
+.contact__section__listas {
+    margin-top: 17px;
+}
+
+.contact__section__lista-informacoes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.contact__section__lista-informacoes--item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.informacoes-item-icone-local {
+    width: 15px;
+    height: 15px;
+}
+
+.informacoes-item-icone-telefone {
+    width: 15px;
+    height: 15px;
+}
+
+.informacoes-item-icone-email {
+    width: 15px;
+    height: 15px;
+}
+
+.informacoes-item-descricao {
+    font-size: .96em;
+}
+
+.contact__section__lista-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.input-item {
+    height: 50px;
+    width: 95%;
+    padding-left: 10px;
+    border: 1px solid grey;
+}
+
+.input-item::placeholder {
+    font-size: 1.2em;
+    color: var(--cinza-fundo);
+}
+
+.contact__section-botao {
+    background-color: var(--fonte-preto);
+    width: 55%;
+    margin-top: 15px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--fonte-branca);
+    font-size: .95em;
+}
+
+.rodape {
+    background-color: var(--cinza-fundo);
+    padding-top: 30px;
+}
+
+.rodape__titulo {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--cinza);
+}
+
+.rodape__icones {
+    display: flex;
+    justify-content: center;
+    column-gap: 1px;
+}
+
+.rodape__icones-item img {
+    margin-top: 35px;
+    width: 25px;
+    height: 25px;
+}
+
+.rodape__subititulo {
+    margin-top: 30px;
+    padding-bottom: 36px;
+    text-align: center;
+    font-size: .9em;
+    color: var(--cinza);
+}
+
+.rodape__subititulo i {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 425px) {
+    .section__ofertas--lugares aside {
+        height: 90px;
+    }
+
+    .contact__section-botao {
+        width: 40%;
+    }
+
+    .section__ofertas-cartao {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .cabecalho {
+        justify-content: space-between;
+        padding: 6px 180px 6px 145px;
+    }
+
+    .container__mapa {
+        background-image: url("../imagens/london.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 40px 120px 60px 110px;
+    }
+
+    .selecionado {
+        justify-content: center;
+        width: 155px;
+        margin-right: 43px;
+    }
+
+    .mapa__links a:nth-child(3) {
+        margin-left: 90px;
+    }
+
+    .mapa__links .link-texto {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .container__mapa__principal {
+        background-color: var(--fonte-branca);
+    }
+
+    .container__mapa-imput {
+        margin-top: 6px;
+        flex-direction: row;
+        column-gap: 16px;
+    }
+
+    .mapa__principal-input {
+        width: 229px;
+    }
+
+    .mapa__principal-link {
+        margin: 16px 0 33px 0;
+    }
+
+    .section__ofertas-titulo {
+        padding-top: 35px;
+    }
+
+    .ofertas__imagems {
+        margin-top: 15px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "cinquenterre cinquenterre newyork sanfran"
+            "cinquenterre cinquenterre pisa paris"
+        ;
+    }
+
+    .section__ofertas--lugares {
+        padding-top: 100px;
+        font-weight: 400;
+        font-size: 1.2em;
+        margin: 0;
+        
+    }
+
+    #cinqueterre {
+        grid-area: cinquenterre;
+        padding: 240px 0 0 20px;
+    }
+
+    #newyork {
+        grid-area: newyork;
+    }
+
+    #sanfran {
+        grid-area: sanfran;
+    }
+
+    #pisa {
+        grid-area: pisa;
+    }
+
+    #paris {
+        grid-area: paris;
+    }
+
+    .section__cartoes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .join-us-input {
+        width: 98%;
+    }
+
+}
+
+@media screen and (min-width: 1366px) {
+   
+    .cabecalho {
+        padding: 0 10px;
+    }
+
+    .container__mapa {
+        padding: 190px 220px;
+    }
+
+    .principal {
+        padding: 0 120px;
+    }
+    
+    .ofertas__imagems {
+        height: 390px;
+    }
+
+    .section__ofertas--lugares {
+        padding-top: 150px;
+    }
+
+    #cinqueterre {
+        grid-area: cinquenterre;
+        padding: 350px 0 0 20px;
+    }
+}
